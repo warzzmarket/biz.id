@@ -1,0 +1,302 @@
+<html>
+ <head>
+  <title>
+   Warzzz Store
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            flex-direction: column;
+        }
+        .banner img {
+            width: 327px;
+            height: 121px;
+            border-radius: 10px;
+        }
+        .banner-text {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .close-banner {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .container {
+            border: 5px solid black;
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #4a4aff;
+            margin-top: 20px;
+        }
+        .header {
+            background-color: #4a4aff;
+            padding: 20px;
+            color: white;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .header h1 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .nav a {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .nav a i {
+            margin-right: 5px;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: left;
+        }
+        .content h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+            border: 5px solid;
+            border-image: linear-gradient(45deg, red, yellow, green) 1;
+        }
+        .product h3 {
+            color: #4a4aff;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product ul {
+            list-style: none;
+            padding: 0;
+        }
+        .product ul li {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .product ul li:before {
+            content: '✔';
+            margin-right: 10px;
+            color: black;
+        }
+        .button {
+            background-color: #4a4aff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .footer {
+            background-color: #4a4aff;
+            padding: 10px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        .footer i {
+            margin-right: 5px;
+        }
+  </style>
+  <script>
+   function closeBanner() {
+            document.getElementById('banner').style.display = 'none';
+        }
+  </script>
+ </head>
+ <body>
+  <div class="banner" id="banner">
+   <img alt="Banner Image" height="121" src="baner.jpg" width="327"/>
+   <div class="banner-text">
+<p>
+  😫 𝘽𝙞𝙣𝙜𝙪𝙣𝙜 𝘾𝙖𝙧𝙞 𝙋𝙖𝙣𝙚𝙡 𝙔𝙖𝙣𝙜 𝙈𝙪𝙧𝙖𝙝 𝘿𝙞 𝙢𝙖𝙣𝙖 ??
+</p>
+<p>
+  👋 𝙎𝙞𝙣𝙞 𝘼𝙩𝙪𝙝 𝙆𝙚 𝙬𝙖𝙧𝙯𝙯 𝙨𝙩𝙤𝙧𝙚 𝙋𝙖𝙣𝙚𝙡 𝙢𝙪𝙧𝙖𝙝 𝙆𝙪𝙖𝙡𝙞𝙩𝙖𝙨 𝙜𝙖 𝙢𝙖𝙞𝙣 - 𝙢𝙖𝙞𝙣 𝙂𝙖𝙧𝙖𝙣𝙨𝙞 1𝙭 𝙘𝙡𝙖𝙞𝙢 
+</p>
+   </div>
+   <div class="close-banner" onclick="closeBanner()">
+    Close
+   </div>
+  </div>
+  <div class="container">
+   <div class="header">
+    <img alt="Warzzz Store Logo" height="100" src="https://i.ibb.co.com/k0xMPJk/atha.png|" width="100"/>
+    <h1>
+     Warzzz Store
+    </h1>
+    <div class="nav">
+     <a href="https://whatsapp.com/channel/0029Vaun8hD3wtb0yFDVM941">
+      <i class="fas fa-thumbtack">
+      </i>
+      Testimoni
+     </a>
+     <a href="https://wa.me/6281293527295">
+      <i class="fas fa-thumbtack">
+      </i>
+      Whatsapp utama
+     </a>
+    </div>
+   </div>
+   <div class="content">
+    <h2>
+     <i class="fas fa-gem">
+     </i>
+     Produk Saya
+    </h2>
+    <div class="product">
+     <img alt="Pterodactyl Image" height="100" src="https://i.ibb.co.com/D5hWDkN/download-1.png" width="100"/>
+     <div>
+      <h3>
+      Panel Run Bot
+      </h3>
+      <ul>
+       <li>
+        Server anti delay
+       </li>
+       <li>
+        Anti DDOS
+       </li>
+       <li>
+        Sc Anti Colong
+       </li>
+       <li>
+        Run Anti lemot
+       </li>
+       <li>
+        Ga gampang mokad
+       </li>
+      </ul>
+      <a class="button" href="#">
+       Beli Sekarang
+      </a>
+     </div>
+    </div>
+    <div class="product">
+     <img alt="botpush Image" height="100" src="https://i.ibb.co.com/pd4GYw7/IMG-20241227-WA0002.jpg" width="100"/>
+     <div>
+      <h3>
+       Bot Pushkontak 
+      </h3>
+      <ul>
+       <li>
+        Bot Anti Banned
+       </li>
+       <li>
+        Bot Anti Delay 
+       </li>
+       <li>
+        Bisa Gc Ketutup
+       </li>
+       <li>
+        Bisa Gc Kebuka
+       </li>
+       <li>
+        Anti Delay
+       </li>
+      </ul>
+      <a class="button" href="https://wa.me/6282218603188?text=*_Warzz+Send+List+Bot+Pushkontaknya+Donk_*">
+       Beli Sekarang
+      </a>
+     </div>
+    </div>
+    <div class="product">
+     <img alt="Bot Hack Image" height="100" src="https://i.ibb.co.com/9g86g96/IMG-20241227-WA0003.jpg" width="100"/>
+     <div>
+      <h3>
+      Bot Hack Kamera
+      </h3>
+      <ul>
+       <li>
+        Hack Kamera modal link
+       </li>
+       <li>
+       Gambar Anti burik
+       </li>
+       <li>
+       Fast ambil foto target
+       </li>
+       <li>
+       Link anti planggaran
+       </li>
+       <li>
+       Bot ga gampang mati
+       </li>
+      </ul>
+      <a class="button" href="#">
+       Beli Sekarang
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="footer">
+    <a href="https://warzzmarket.github.io/admin/">
+     <i class="fas fa-phone">
+     </i>
+     <span>
+      ADMIN CONTACT
+     </span>
+    </a>
+   </div>
+  </div>
+ </body>
+</html>
